@@ -4,7 +4,8 @@
   "description": "",
   "main": "build/index.js",
     "scripts": {
-    "prepare": "/usr/bin/gulp js",
+	"prepare": "/usr/bin/gulp js",
+	"postinstall": "/usr/bin/gulp js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
