@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
-    "scripts": {
-	"prepare" : "gulp js",
+  "scripts": {
+    "prepare": "node node_modules/gulp/bin/gulp.js js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
