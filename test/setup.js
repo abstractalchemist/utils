@@ -11,6 +11,8 @@ global.window = dom.window;
 // this tells the DOM ( if it needs to know ) that it is in test mode
 global.__testing__ = true;
 
+global.XMLHttpRequest = global.window.XMLHttpRequest;
+
 // this is a dummy handler standin for mdl component handler
 global.componentHandler = {
     upgradeDom() {
