@@ -9,9 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "rx": "^4.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
