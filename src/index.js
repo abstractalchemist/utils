@@ -4,6 +4,12 @@ export default function(opts, data) {
 	let inputs = data || "";
 	let xhr = new XMLHttpRequest();
 	xhr.open(method, opts.url);
+	if(opts.headers) {
+	    for(let i in opts.headers) {
+		if(opts.headers.hasOwnProperty(i))
+		    xhr.setRequestHeader(i, opts.headers[i])
+	    }
+	}
 	xhr.onreadystatechange = function() {
 	    if(xhr.readyState === 4) {
 		if(xhr.status === 200 || xhr.status === 201) {
